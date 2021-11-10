@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'head.php';
+//ha pulsado el boton votar
 if(isset($_REQUEST['votar']))
 {
   $indice=$_REQUEST['codigo'];
@@ -11,19 +12,12 @@ if(isset($_REQUEST['votar']))
 echo'<form action="" method="post">
             Selecciona la Tapa a la cual quieres votar
                             <select name="codigo">';
-                            foreach($_SESSION['tapas']as $clave=>$valor)
+                            foreach($_SESSION['tapas'] as $clave=>$vector)
                             {
-                              echo'<option value="'.$clave.'">'.$valor[0]. '</option>';
-                            } 
-                                  '<option value="1">Crujiente de Arroz con rollitos de atún y verduras en escabeche</option>
-                                  <option value="2">La Mar de Pincho</option>
-                                  <option value="3">Pincho el indiano de Cantabria</option>
-                                  <option value="4">Tierra, sabor, tradición</option>
-                                  <option value="5">Txerri Beltz</option>
-                                  <option value="6">Esencia</option>
-                                  <option value="7">Rebanada de Vida</option>
+                              echo'<option value="'.$clave.'">'.$vector[0]. '</option>';
+                            }
                                  
-                                </select>
+                               echo '</select>
      <br> 
      <input name="votar" type="submit"  value="Votar"/>
              

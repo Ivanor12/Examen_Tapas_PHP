@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'head.php';
-if(isset($_REQUEST['borrar'])) //si he pulsado Calcular
+if(isset($_REQUEST['borrar'])) //si he pulsado borrar
 {
   $codigo_tapa=$_REQUEST['codigo'];
   //numero elementos en el array antes de borrar
@@ -19,7 +19,7 @@ if(isset($_REQUEST['borrar'])) //si he pulsado Calcular
     echo '<script>alert("La tapa se ha borrado con exito");</script>';
   }
   //echo'<pre>';
-  //var_dump($_SESSION['votos']);
+  var_dump($_SESSION['tapas']);
   //echo'</pre>';
 }                                                  
  print' 

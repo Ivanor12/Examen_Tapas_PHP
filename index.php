@@ -22,6 +22,6 @@ $_SESSION['votos']= array('TV-0001' => 0,
             'PV-0001' =>0,
             'PV-0002' =>0,
             'PV-0003' =>0);
-//var_dump ($tapas);
+//var_dump ($_SESSION['tapas']);
 include 'pie.php';
 
