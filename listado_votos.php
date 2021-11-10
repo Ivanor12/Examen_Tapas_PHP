@@ -1,8 +1,9 @@
 <?php
-session_start();
+
 include 'head.php';
+session_start();
 //echo'<pre>';
-//var_dump(($_SESSION['votos']));
+var_dump(($_SESSION['tapas']));
 //echo'</pre>';
 echo '<table> 
 <tr>
