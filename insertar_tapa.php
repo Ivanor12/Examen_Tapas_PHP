@@ -1,6 +1,7 @@
 <?php
-session_start();
+
 include 'head.php';
+session_start();
 if(isset($_REQUEST['calcular'])) //si he pulsado Calcular
 {
   $codigo_tapa=$_REQUEST['codigo'];
@@ -65,7 +66,7 @@ print'
                     </table>
         </form>
         </div>';
-
+//var_dump($_SESSION['tapas']);
 
 include 'pie.php';
 
