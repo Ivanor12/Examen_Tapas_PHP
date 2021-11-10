@@ -13,8 +13,8 @@ echo '<table>
 foreach($_SESSION['votos'] as $clave=>$vector)
 {
     echo '<tr>
-        echo '<td>'.$clave.'</td>';
-        echo '<td>'.$valor.'</td>';
+        echo <td>'.$clave.'</td>;
+        echo <td>'.$valor.'</td>;
     <tr>';
 }
 echo '</table>';                                                                                  
